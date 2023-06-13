@@ -1,5 +1,9 @@
-import '@/styles/globals.css'
-
+import { MyContextProvider } from '@/context/createContext'
+import '@/styles/globals.scss'
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <MyContextProvider>
+      <Component {...pageProps} />
+    </MyContextProvider>
+  ) 
 }
