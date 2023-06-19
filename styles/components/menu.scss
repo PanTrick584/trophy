@@ -1,0 +1,58 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 15px;
+    height: calc(100vh - 30px);
+    width: calc(33vw - 20px);
+    margin-top: 15px;
+    margin-left: calc(-33vw + 95px);
+    background-color: transparent;
+    transition: all .3s;
+
+    &-show {
+        margin-left: 0;
+        background-color: rgba($colorBlue,  .6);
+    }
+
+    &-nav {
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+
+        &-list {
+            display: flex;
+            list-style-type: none;
+
+            &-item {
+                padding: 15px 15px 15px 0;
+                font-size: 22px;
+                color: $colorOrangeLight;
+
+                &:first-of-type {
+                    padding-left: 15px;
+                }
+
+                &:last-of-type {
+                    padding-right: 45px;
+                }
+            }
+        }
+
+        &-btn {
+            margin-right: 15px;
+            cursor: pointer;
+
+            &-item {
+                border: 1px solid rgba($colorBlue, .6);
+                background-color: $colorOrangeLight;
+                height: 6px;
+                width: 35px;
+                margin-bottom: 4px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
