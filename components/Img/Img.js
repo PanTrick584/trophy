@@ -27,7 +27,6 @@ export const Img = ({src, num, allowed = true}) => {
     <div className={`image-box image-box-${num}`} 
          style={pointer} 
         //  onMouseEnter={() => setMouseOver(prev => !prev)}
-        //  onMouseLeave={() => setMouseOver(prev => !prev)}
          >
         <img onClick={() => setIsVisible(prev => allowed && !prev)}  
              className="image-item" src={`/img/${src}`} />

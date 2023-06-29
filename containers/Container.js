@@ -17,7 +17,7 @@ const Container = () => {
     <>
         {/* <Menu /> */}
         <Grid sectionNum={'header'}>
-            <Img src={'header-1a.jpg'} num={'one'} allowed={false}/>
+            <Img src={'header-1.jpg'} num={'one'} allowed={false}/>
             <Text text={'trofeum'}/>
         </Grid>
         <Grid sectionNum={'text'}>
@@ -31,9 +31,6 @@ const Container = () => {
         </Grid>
         <Grid sectionNum={'text'}>
             <Text text={text2}/>
-        </Grid>
-        <Grid sectionNum={'full'}>
-            <Img src={'header-2.jpg'} num={'one'} allowed={false}/>
         </Grid>
         <Grid sectionNum={'two'}>
             <Img src={'fish-1.jpg'} num={'one'}/>
@@ -49,8 +46,9 @@ const Container = () => {
             <Text text={text3}/>
         </Grid>
         <Grid sectionNum={'full'}>
-            <Img src={'header-3.jpg'} num={'one'} allowed={false}/>
+            <Img src={'header-2.jpg'} num={'one'} allowed={false}/>
         </Grid>
+        
         <Grid sectionNum={'four'}>
             <Img src={'museum-pic-0-1.jpg'} num={'five'}/>
             <Img src={'found-28.jpg'} num={'two'}/>
@@ -62,7 +60,7 @@ const Container = () => {
             <Img src={'museum-pic-4-1.jpg'} num={'one'}/>
             <Img src={'found-2.jpg'} num={'two'}/>
             <Img src={'museum-pic-5-1.jpg'} num={'three'}/>
-            <Img src={'piwnica-6.jpg'} num={'four'}/>
+            
             <Img src={'museum-pic-7-1.jpg'} num={'five'}/>
             <Img src={'museum-pic-1-1.jpg'} num={'six'}/>
         </Grid>
@@ -70,23 +68,28 @@ const Container = () => {
             <Text text={text4}/>
         </Grid>
         <Grid sectionNum={'six'}>
+           
             <Img src={'found-7.jpg'} num={'two'}/>
             <Img src={'piwnica-5.jpg'} num={'three'}/>
             <Img src={'found-14.jpg'} num={'four'}/>
         </Grid>
         <Grid sectionNum={'seven'}>
             <Img src={'found-5.jpg'} num={'one'}/>
-            <Img src={'shots.jpg'} num={'two'} allowed={false}/>
+            {/* <Img src={'shots.jpg'} num={'two'} allowed={false}/> */}
             
             <Img src={'piwnica-7.jpg'} num={'three'}/>
             <Img src={'found-9.jpg'} num={'four'}/>
             <Img src={'piwnica-1a.jpg'} num={'five'}/>
         </Grid>
+
+        <Grid sectionNum={'full'}>
+            <Img src={'header-3.jpg'} num={'one'} allowed={false}/>
+        </Grid>
         <Grid sectionNum={'eight'}>
             <Img src={'piwnica-9.jpg'} num={'one'}/>
             <Img src={'piwnica-2a.jpg'} num={'two'}/>
-            <Img src={'shots-1.jpg'} num={'three'} allowed={false}/>
-            <Img src={'PIWNICA-8.jpg'} num={'four'}/>
+            {/* <Img src={'shots-1.jpg'} num={'three'} allowed={false}/> */}
+           
             <Img src={'found-6.jpg'} num={'five'}/>
             <Img src={'found-8.jpg'} num={'six'}/>
         </Grid>
@@ -94,32 +97,37 @@ const Container = () => {
             <Text text={text5}/>
         </Grid>
         <Grid sectionNum={'nine'}>
-            <Img src={'found-12.jpg'} num={'one'}/>
             <Img src={'found-13.jpg'} num={'two'}/>
-            <Img src={'found-14.jpg'} num={'three'}/>
-            <Img src={'found-15.jpg'} num={'four'}/>
+            {/* <Img src={'found-14.jpg'} num={'three'}/> */}
+            <Img src={'found-15.jpg'} num={'three'}/>
             <Img src={'found-1.jpg'} num={'five'}/>
            
         </Grid>
         <Grid sectionNum={'ten'}>
             <Img src={'found-19.jpg'} num={'one'}/>
             <Img src={'found-18.jpg'} num={'two'}/>
-            <Img src={'found-27a.jpg'} num={'three'} allowed={false}/>
+            {/* <Img src={'found-27a.jpg'} num={'three'} allowed={false}/> */}
             <Img src={'found-25.jpg'} num={'four'}/>
-            <Img src={'shots-3.jpg'} num={'five'} allowed={false}/>
+            {/* <Img src={'shots-3.jpg'} num={'five'} allowed={false}/> */}
         </Grid>
         <Grid sectionNum={'eleven'}>
             <Img src={'found-23.jpg'} num={'one'}/>
-            <Img src={'shots-4.jpg'} num={'two'}/>
-            <Img src={'found-20.jpg'} num={'three'}/>
+            {/* <Img src={'shots-4.jpg'} num={'two'} allowed={false}/> */}
+            {/* <Img src={'found-20.jpg'} num={'three'}/> */}
+             <Img src={'PIWNICA-8.jpg'} num={'three'}/>
             <Img src={'found-26.jpg'} num={'four'}/>
-            <Img src={'shots-2.jpg'} num={'five'} allowed={false}/>
+            {/* <Img src={'shots-2.jpg'} num={'five'} allowed={false}/> */}
             <Img src={'museum-pic-2-1.jpg'} num={'six'}/>
         </Grid>
         <Grid sectionNum={'twelve'}>
-             <Img src={'found-21.jpg'} num={'one'}/>
+            <Img src={'found-21.jpg'} num={'one'}/>
+            <Img src={'found-12.jpg'} num={'two'}/>
+            <Img src={'found-17.jpg'} num={'five'}/>            
+
+        </Grid>
+        <Grid sectionNum={'thirteen'}>
+            <Img src={'piwnica-6.jpg'} num={'four'}/>
             <Img src={'found-22.jpg'} num={'two'}/>
-            <Img src={'found-17.jpg'} num={'five'}/>
         </Grid>
         <Grid sectionNum={'text'}>
             <Text text={text6}/>
@@ -127,9 +135,15 @@ const Container = () => {
         <Grid sectionNum={'full'}>
             <Img src={'header-4.jpg'} num={'one'} allowed={false}/>
         </Grid>
-        {/* <Grid sectionNum={'full'}>
-            <Text text={'Created by Patryk Chodacki'}/>
-        </Grid> */}
+        <Grid sectionNum={'last'}>
+            <h4>created by</h4>
+            <h3>Patryk Chodacki</h3>
+            <ul className='list'>
+                <li className='list-item'>chodacki.pc@gmail.com</li>
+                <li className='list-item'>instagran@chodackipatryk</li>
+            </ul>
+            <h4>2023</h4>
+        </Grid>
     </>
   )
 }
