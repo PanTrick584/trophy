@@ -113,6 +113,7 @@ const Container = () => {
         <Grid sectionNum={'thirteen'}>
             <Img src={'piwnica-6.jpg'} num={'four'}/>
             <Img src={'found-22.jpg'} num={'two'}/>
+            <Img src={'found-29.jpg'} num={'one'}/>
         </Grid>
         <Grid sectionNum={'text'}>
             <Text text={text6}/>
