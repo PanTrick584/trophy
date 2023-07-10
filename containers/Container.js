@@ -74,9 +74,7 @@ const Container = () => {
             <Img src={'found-14.jpg'} num={'four'}/>
         </Grid>
         <Grid sectionNum={'seven'}>
-            <Img src={'found-5.jpg'} num={'one'}/>
-            {/* <Img src={'shots.jpg'} num={'two'} allowed={false}/> */}
-            
+            <Img src={'found-5.jpg'} num={'one'}/>            
             <Img src={'piwnica-7.jpg'} num={'three'}/>
             <Img src={'found-9.jpg'} num={'four'}/>
             <Img src={'piwnica-1a.jpg'} num={'five'}/>
@@ -88,7 +86,6 @@ const Container = () => {
         <Grid sectionNum={'eight'}>
             <Img src={'piwnica-9.jpg'} num={'one'}/>
             <Img src={'piwnica-2a.jpg'} num={'two'}/>
-            {/* <Img src={'shots-1.jpg'} num={'three'} allowed={false}/> */}
            
             <Img src={'found-6.jpg'} num={'five'}/>
             <Img src={'found-8.jpg'} num={'six'}/>
@@ -98,7 +95,6 @@ const Container = () => {
         </Grid>
         <Grid sectionNum={'nine'}>
             <Img src={'found-13.jpg'} num={'two'}/>
-            {/* <Img src={'found-14.jpg'} num={'three'}/> */}
             <Img src={'found-15.jpg'} num={'three'}/>
             <Img src={'found-1.jpg'} num={'five'}/>
            
@@ -106,17 +102,12 @@ const Container = () => {
         <Grid sectionNum={'ten'}>
             <Img src={'found-19.jpg'} num={'one'}/>
             <Img src={'found-18.jpg'} num={'two'}/>
-            {/* <Img src={'found-27a.jpg'} num={'three'} allowed={false}/> */}
             <Img src={'found-25.jpg'} num={'four'}/>
-            {/* <Img src={'shots-3.jpg'} num={'five'} allowed={false}/> */}
         </Grid>
         <Grid sectionNum={'eleven'}>
             <Img src={'found-23.jpg'} num={'one'}/>
-            {/* <Img src={'shots-4.jpg'} num={'two'} allowed={false}/> */}
-            {/* <Img src={'found-20.jpg'} num={'three'}/> */}
              <Img src={'PIWNICA-8.jpg'} num={'three'}/>
             <Img src={'found-26.jpg'} num={'four'}/>
-            {/* <Img src={'shots-2.jpg'} num={'five'} allowed={false}/> */}
             <Img src={'museum-pic-2-1.jpg'} num={'six'}/>
         </Grid>
         <Grid sectionNum={'twelve'}>
