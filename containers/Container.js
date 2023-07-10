@@ -48,7 +48,6 @@ const Container = () => {
         <Grid sectionNum={'full'}>
             <Img src={'header-2.jpg'} num={'one'} allowed={false}/>
         </Grid>
-        
         <Grid sectionNum={'four'}>
             <Img src={'museum-pic-0-1.jpg'} num={'five'}/>
             <Img src={'found-28.jpg'} num={'two'}/>
@@ -60,7 +59,6 @@ const Container = () => {
             <Img src={'museum-pic-4-1.jpg'} num={'one'}/>
             <Img src={'found-2.jpg'} num={'two'}/>
             <Img src={'museum-pic-5-1.jpg'} num={'three'}/>
-            
             <Img src={'museum-pic-7-1.jpg'} num={'five'}/>
             <Img src={'museum-pic-1-1.jpg'} num={'six'}/>
         </Grid>
@@ -68,7 +66,6 @@ const Container = () => {
             <Text text={text4}/>
         </Grid>
         <Grid sectionNum={'six'}>
-           
             <Img src={'found-7.jpg'} num={'two'}/>
             <Img src={'piwnica-5.jpg'} num={'three'}/>
             <Img src={'found-14.jpg'} num={'four'}/>
@@ -79,7 +76,6 @@ const Container = () => {
             <Img src={'found-9.jpg'} num={'four'}/>
             <Img src={'piwnica-1a.jpg'} num={'five'}/>
         </Grid>
-
         <Grid sectionNum={'full'}>
             <Img src={'header-3.jpg'} num={'one'} allowed={false}/>
         </Grid>
@@ -97,7 +93,6 @@ const Container = () => {
             <Img src={'found-13.jpg'} num={'two'}/>
             <Img src={'found-15.jpg'} num={'three'}/>
             <Img src={'found-1.jpg'} num={'five'}/>
-           
         </Grid>
         <Grid sectionNum={'ten'}>
             <Img src={'found-19.jpg'} num={'one'}/>
@@ -114,7 +109,6 @@ const Container = () => {
             <Img src={'found-21.jpg'} num={'one'}/>
             <Img src={'found-12.jpg'} num={'two'}/>
             <Img src={'found-17.jpg'} num={'five'}/>            
-
         </Grid>
         <Grid sectionNum={'thirteen'}>
             <Img src={'piwnica-6.jpg'} num={'four'}/>
@@ -131,7 +125,7 @@ const Container = () => {
             <h3>Patryk Chodacki</h3>
             <ul className='list'>
                 <li className='list-item'>chodacki.pc@gmail.com</li>
-                <li className='list-item'>instagran@chodackipatryk</li>
+                <li className='list-item'>instagram@chodackipatryk</li>
             </ul>
             <h4>2023</h4>
         </Grid>

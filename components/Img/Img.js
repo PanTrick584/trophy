@@ -27,8 +27,6 @@ export const Img = ({src, num, allowed = true}) => {
     width: '100%',
     height: '100%'
   }
-
-  console.log(isMobile);
   
   return (
     <div className={`image-box image-box-${num}`} 
@@ -36,12 +34,14 @@ export const Img = ({src, num, allowed = true}) => {
         //  onMouseEnter={() => setMouseOver(prev => !prev)}
          >
         <img onClick={() => setIsVisible(prev => allowed && !prev)}  
-             className="image-item" src={`/img/${isMobile ? 'mobile/' : ''}${src}`} />
+             className="image-item" src={`img/${isMobile ? 'mobile/' : ''}${src}`}
+             alt="/" />
         <div onClick={() => setIsVisible(prev => allowed && !prev)} 
              className="image-popup"  
              style={styleImg}>
           <img className="image-item" 
-               src={`/img/${isMobile ? 'mobile/' : ''}${src}`} />
+               src={`img/${isMobile ? 'mobile/' : ''}${src}`}
+               alt="/" />
         </div>
         <div className="image-overlay" style={overlay}></div>
     </div>

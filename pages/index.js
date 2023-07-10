@@ -2,13 +2,9 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Container from '@/containers/Container'
 
-import { useContext } from 'react'
-import { MyContext } from '@/context/createContext'
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const {text, setText} = useContext(MyContext)
 
   return (
     <>
