@@ -1,8 +1,13 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export const Img = ({src, num, allowed = true}) => {
   const [isVisible, setIsVisible] = useState(false)
   const [isMouseOver, setMouseOver] = useState(false)
+  const [isMobile, setMobile] = useState(false)
+
+  useEffect(() => {
+    window.innerWidth < 768 ? setMobile(true) : setMobile(false) 
+  },[])
 
   const styleImg = {
     visibility: isVisible ? 'visible' : 'hidden',
@@ -22,6 +27,8 @@ export const Img = ({src, num, allowed = true}) => {
     width: '100%',
     height: '100%'
   }
+
+  console.log(isMobile);
   
   return (
     <div className={`image-box image-box-${num}`} 
@@ -29,12 +36,12 @@ export const Img = ({src, num, allowed = true}) => {
         //  onMouseEnter={() => setMouseOver(prev => !prev)}
          >
         <img onClick={() => setIsVisible(prev => allowed && !prev)}  
-             className="image-item" src={`/img/${src}`} />
+             className="image-item" src={`/img/${isMobile ? 'mobile/' : ''}${src}`} />
         <div onClick={() => setIsVisible(prev => allowed && !prev)} 
              className="image-popup"  
              style={styleImg}>
           <img className="image-item" 
-               src={`/img/${src}`} />
+               src={`/img/${isMobile ? 'mobile/' : ''}${src}`} />
         </div>
         <div className="image-overlay" style={overlay}></div>
     </div>
