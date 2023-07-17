@@ -33,10 +33,12 @@ export const Img = ({src, num, allowed = true}) => {
          style={pointer} 
         //  onMouseEnter={() => setMouseOver(prev => !prev)}
          >
-        <img onClick={() => setIsVisible(prev => allowed && !prev)}  
+        <img onClick={() => setIsVisible(prev => allowed && !prev)}
+             onTouchStart={() => setIsVisible(prev => allowed && !prev)}
              className="image-item" src={`img/${isMobile ? 'mobile/' : ''}${src}`}
              alt="/" />
-        <div onClick={() => setIsVisible(prev => allowed && !prev)} 
+        <div onClick={() => setIsVisible(prev => allowed && !prev)}
+             onTouchStart={() => setIsVisible(prev => allowed && !prev)}
              className="image-popup"  
              style={styleImg}>
           <img className="image-item" 

@@ -18,7 +18,7 @@ const Container = () => {
         {/* <Menu /> */}
         <Grid sectionNum={'header'}>
             <Img src={'header-1.jpg'} num={'one'} allowed={false}/>
-            <Text text={'trofeum'}/>
+            <Text text={'Trofeum'}/>
         </Grid>
         <Grid sectionNum={'text'}>
             <Text text={text1}/>
@@ -45,7 +45,7 @@ const Container = () => {
             <Img src={'fish-7.jpg'} num={'two'}/>
             <Text text={text3}/>
         </Grid>
-        <Grid sectionNum={'full'}>
+        <Grid sectionNum={'full-one'}>
             <Img src={'header-2.jpg'} num={'one'} allowed={false}/>
         </Grid>
         <Grid sectionNum={'four'}>
@@ -76,7 +76,7 @@ const Container = () => {
             <Img src={'found-9.jpg'} num={'four'}/>
             <Img src={'piwnica-1a.jpg'} num={'five'}/>
         </Grid>
-        <Grid sectionNum={'full'}>
+        <Grid sectionNum={'full-two'}>
             <Img src={'header-3.jpg'} num={'one'} allowed={false}/>
         </Grid>
         <Grid sectionNum={'eight'}>
@@ -118,7 +118,7 @@ const Container = () => {
         <Grid sectionNum={'text'}>
             <Text text={text6}/>
         </Grid>
-        <Grid sectionNum={'full'}>
+        <Grid sectionNum={'fourteen'}>
             <Img src={'header-4.jpg'} num={'one'} allowed={false}/>
         </Grid>
         <Grid sectionNum={'last'}>
@@ -128,7 +128,7 @@ const Container = () => {
                 <li className='list-item'>chodacki.pc@gmail.com</li>
                 <li className='list-item'>instagram@chodackipatryk</li>
             </ul>
-            <h4>2023</h4>
+            <h4 className='year'>2023</h4>
         </Grid>
     </>
   )
