@@ -1,0 +1,14 @@
+.language {
+    width: fit-content;
+    margin: 10px 15px 0 auto;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: $colorOrangeLight;
+    color: $colorBlue;
+    z-index: 10;
+    cursor: pointer;
+    transition: all .4s;
+}
