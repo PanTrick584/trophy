@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useContextProvider } from '../context/context';
-import './styles/'
+import './styles/menu.scss'
 
 export const Menu = () => {
   const [showMenu, setShoweMenu] = useState(false)

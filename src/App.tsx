@@ -1,9 +1,11 @@
-import './App.scss'
-import Container from './containers/Container'
+import Container from './containers/Container';
+import { MyContextProvider } from './context/context';
 
 function App() {
     return (
-        <Container />
+        <MyContextProvider>
+            <Container />
+        </MyContextProvider>
     )
 }
 

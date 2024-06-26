@@ -1,7 +1,10 @@
 import { ReactNode, createContext, useContext, useState } from "react";
 
 interface MyContextType {
-
+    text: string,
+    handleText: (text: string) => void,
+    language: string,
+    handleLanguage: (language: string) => void
 }
 
 interface MyContextProviderProps {
@@ -10,25 +13,28 @@ interface MyContextProviderProps {
 
 const MyContext = createContext<MyContextType | undefined>(undefined);
 
+export const useContextProvider = () => {
+	const context = useContext(MyContext);
+	if (!context) throw new Error("You forgot something");
+	return context;
+};
+
 export const MyContextProvider: React.FC<MyContextProviderProps> = ({children}) => {
     const [text, setText] = useState('');
     const [language, setLanguage] = useState('en');
+
+    const handleText = () => setText(text)
+    const handleLanguage = () => setLanguage(prev => prev === 'pl' ? 'en' : 'pl')
 
     return (
         <MyContext.Provider 
             value={{
                 text, 
-                setText,
+                handleText,
                 language,
-                setLanguage
+                handleLanguage
             }}>
             {children}
         </MyContext.Provider>
     )
 }
-
-export const useContextProvider = () => {
-	const state = useContext(MyContext);
-	if (!state) throw new Error("You forgot CartStateContextProvider");
-	return state;
-};

@@ -1,21 +1,26 @@
-import { useContextProvider } from '../context/context.tsx';
-import { Grid } from './Grid';
-import { Img } from '../components/Img/Img.tsx';
-import { Text } from '../components/Text.tsx';
-import { Menu } from '../components/Menu.tsx';
+import Grid from './Grid';
+import { Img } from '../components/Img/Img';
+import { Text } from '../components/Text';
+import { Menu } from './Menu';
+import { useContextProvider } from '../context/context';
+import Header from './Header';
+import Footer from './Footer';
 
 const Container = () => {
     const {language} = useContextProvider();
 
   return (
     <div className='container'>
-            <Menu />
-        <Grid sectionNum={'header'}>
+        <Menu />
+        <Header
+            headerImg={'header-1.jpg'}
+            headerText={language === 'pl' ? 'Trofeum' : 'Trophy'}/>
+        {/* <Grid sectionNum={'header'}>
             <Img src={'header-1.jpg'} num={'one'} allowed={false}/>
-            <Text text={ language === 'pl' ? 'Trofeum' : 'Trophy'}/>
-        </Grid>
+            <Text text={'' }/>
+        </Grid> */}
         <div className='container-thin-layout'>
-            <Grid sectionNum={'text'}>
+            {/* <Grid sectionNum={'text'}>
                 <Text text={language === 'pl' ? text1 : text1en}/>
             </Grid>
             <Grid sectionNum={'one'}>
@@ -39,9 +44,9 @@ const Container = () => {
                 <Img src={'fish-6.jpg'} num={'one'}/>
                 <Img src={'fish-7.jpg'} num={'two'}/>
                 <Text text={language === 'pl' ? text3 : text3en}/>
-            </Grid>
+            </Grid> */}
         </div>
-        <Grid sectionNum={'full-one'}>
+        {/* <Grid sectionNum={'full-one'}>
             <Img src={'header-2.jpg'} num={'one'} allowed={false}/>
         </Grid>
         <div className='container-thin-layout'>
@@ -76,8 +81,8 @@ const Container = () => {
         </div>
         <Grid sectionNum={'full-two'}>
             <Img src={'header-3.jpg'} num={'one'} allowed={false}/>
-        </Grid>
-        <div className='container-thin-layout'>
+        </Grid> */}
+        {/* <div className='container-thin-layout'>
             <Grid sectionNum={'eight'}>
                 <Img src={'piwnica-9.jpg'} num={'one'}/>
                 <Img src={'piwnica-2a.jpg'} num={'two'}/>
@@ -123,17 +128,9 @@ const Container = () => {
         </div>
         <div className='container-thin-layout'>
             
-        </div>
+        </div> */}
         
-        <Grid sectionNum={'last'}>
-            <h4>created by</h4>
-            <h3>Patryk Chodacki</h3>
-            <ul className='list'>
-                <li className='list-item'><a href='mailto:chodacki.pc@gmail.com' target='_blank'>chodacki.pc@gmail.com</a></li>
-                <li className='list-item'><a href='https://www.instagram.com/chodackipatryk/'>instagram@chodackipatryk</a></li>
-            </ul>
-            <h4 className='year'>2023</h4>
-        </Grid>
+        <Footer />
     </div>
   )
 }
