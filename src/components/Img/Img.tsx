@@ -1,6 +1,12 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
-export const Img = ({src, num, allowed = true}) => {
+type ImageProps ={
+    src: string;
+    num: string;
+    allowed?: boolean;
+}
+
+export const Img = ({src, num, allowed = true}: ImageProps) => {
   const [isVisible, setIsVisible] = useState(false)
   const [isMouseOver, setMouseOver] = useState(false)
   const [isMobile, setMobile] = useState(false)

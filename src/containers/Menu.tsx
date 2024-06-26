@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useContextProvider } from '../context/context';
 import './styles/menu.scss'
 
-export const Menu = () => {
+const Menu = () => {
   const [showMenu, setShoweMenu] = useState(false)
   const context = useContextProvider();
   const language = context.language;
@@ -28,3 +28,5 @@ export const Menu = () => {
     </div>
   )
 }
+
+export default Menu;

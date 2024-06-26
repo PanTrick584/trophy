@@ -5,36 +5,51 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10vh 0 10vh;
+    padding: 40px 0;
     background-color: $colorBlue;
 
-    h3,
-    h4 {
+    &-text-small,
+    &-text-mid,
+    &-header,
+    &-list-item-link {
         font-weight: 100;
         color: $colorOrangeLight;
         font-family: inherit;
     }
 
-    h3 {
+    &-header {
         font-size: 32px;
+        padding-bottom: 20px;
     }
 
-    h4 {
+    &-text-mid {
         font-size: 18px;
     }
 
-    .list {
+    &-text-small {
+        font-size: 12px;
+    }
+
+    &-list {
         display: flex;
         flex-direction: column;
         list-style-type: none;
         align-items: center;
         justify-content: center;
+        padding-bottom: 40px;
+        gap: 20px;
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+        }
 
         &-item {
             font-size: 18px;
             font-weight: 100;
-            color: $colorOrangeLight;
-            padding: 10px;
+            
+            &-link {
+                text-decoration: none;
+            }
         }
     }
 }

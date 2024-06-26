@@ -1,0 +1,15 @@
+@import '../../styles/utils/variables.scss';
+
+.header {
+    position: relative;
+
+    &-h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 64px;
+        font-weight: 200;
+        color: $colorOrangeLight;
+    }
+}

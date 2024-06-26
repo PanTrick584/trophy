@@ -1,15 +1,4 @@
 .main {
-    display: flex;
-    background-color: $colorOrangeLight;
+
 }
 
-.container {
-    &-header {
-        position: relative;
-    }
-
-    &-thin-layout {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}

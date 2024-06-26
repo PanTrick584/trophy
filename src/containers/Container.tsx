@@ -1,25 +1,26 @@
-import Grid from './Grid';
-import { Img } from '../components/Img/Img';
-import { Text } from '../components/Text';
-import { Menu } from './Menu';
-import { useContextProvider } from '../context/context';
+import Menu from './Menu';
 import Header from './Header';
 import Footer from './Footer';
+import { useContextProvider } from '../context/context';
+
+import './styles/container.scss';
+import Main from './Main';
 
 const Container = () => {
     const {language} = useContextProvider();
 
   return (
     <div className='container'>
-        <Menu />
-        <Header
-            headerImg={'header-1.jpg'}
-            headerText={language === 'pl' ? 'Trofeum' : 'Trophy'}/>
-        {/* <Grid sectionNum={'header'}>
-            <Img src={'header-1.jpg'} num={'one'} allowed={false}/>
-            <Text text={'' }/>
-        </Grid> */}
-        <div className='container-thin-layout'>
+        <div className="container-layout">
+            <Menu />
+            <Header
+                headerImg={'header-1.jpg'}
+                headerText={language === 'pl' ? 'Trofeum' : 'Trophy'}
+            />
+            <Main />
+            <Footer />
+
+        </div>
             {/* <Grid sectionNum={'text'}>
                 <Text text={language === 'pl' ? text1 : text1en}/>
             </Grid>
@@ -45,7 +46,6 @@ const Container = () => {
                 <Img src={'fish-7.jpg'} num={'two'}/>
                 <Text text={language === 'pl' ? text3 : text3en}/>
             </Grid> */}
-        </div>
         {/* <Grid sectionNum={'full-one'}>
             <Img src={'header-2.jpg'} num={'one'} allowed={false}/>
         </Grid>
@@ -126,11 +126,7 @@ const Container = () => {
                 <Img src={'header-4.jpg'} num={'one'} allowed={false}/>
             </Grid>
         </div>
-        <div className='container-thin-layout'>
-            
-        </div> */}
-        
-        <Footer />
+*/}
     </div>
   )
 }
