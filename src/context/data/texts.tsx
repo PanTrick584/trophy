@@ -34,6 +34,10 @@ export const text_6 = {
 }
 
 export const textTranslations = {
+    text_title: {
+        pl: "Trofeum",
+        en: "Trophy"
+    },
     text_1: {
         pl: "...to upamiętnienie sukcesu, zachowana pamięć emocji w\u00A0momencie triumfu. Niezależnie czy powieszone na\u00A0ścianie, postawione na półce czy\u00A0sfotografowane —\u00A0stanowi symbol dominacji\u00A0i\u00A0przewagi.",
         en: "...it is a commemoration of success, a preserved memory of emotions at the moment of triumph. Regardless of whether it is hung on the wall, placed on a shelf or photographed - it is a symbol of domination and advantage."

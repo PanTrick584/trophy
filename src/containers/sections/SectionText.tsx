@@ -8,7 +8,7 @@ interface SectionTextProp {
 
 const SectionText = ({text}: SectionTextProp) => {
     const {language} = useContextProvider();
-    const translatedText: string = text[language];
+    const translatedText: string = text[language] || 'Translation not available';;
 
     return(
         <div className="section-text">

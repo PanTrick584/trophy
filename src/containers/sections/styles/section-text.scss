@@ -1,10 +1,14 @@
 @import '../../../styles//utils/variables.scss';
 
 .section-text {
-    padding: 50px 0;
+    padding: 450px 0;
     font-size: 32px;
     color: $colorBlue;
     width: 60%;
     margin: 0 auto;
     text-align: center;
+
+    &:first-of-type {
+        padding: 100px 0 450px;
+    }
 }

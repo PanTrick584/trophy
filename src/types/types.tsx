@@ -1,6 +1,5 @@
 export interface Translations {
-    pl: string;
-    en: string;
+    [key: string]: string;
 }
 
 export type Image = {

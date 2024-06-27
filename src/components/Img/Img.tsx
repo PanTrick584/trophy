@@ -11,20 +11,18 @@ export const Img = ({src, num, allowed = true}: ImageProps) => {
   const [isMouseOver, setMouseOver] = useState(false)
   const [isMobile, setMobile] = useState(false)
 
-  useEffect(() => {
-    window.innerWidth < 768 ? setMobile(true) : setMobile(false) 
-  },[])
+  useEffect(() =>  window.innerWidth < 768 ? setMobile(true) : setMobile(false), [])
 
-  const styleImg = {
+  const styleImg: React.CSSProperties = {
     visibility: isVisible ? 'visible' : 'hidden',
     opacity: isVisible ? 1 : 0
   }
 
-  const pointer = {
+  const pointer: React.CSSProperties = {
     cursor: allowed ? 'pointer' : 'default'
   }
 
-  const overlay = {
+  const overlay: React.CSSProperties = {
     position: 'absolute',
     top: 0,
     left: 0,
@@ -39,17 +37,26 @@ export const Img = ({src, num, allowed = true}: ImageProps) => {
          style={pointer} 
         //  onMouseEnter={() => setMouseOver(prev => !prev)}
          >
-        <img onClick={() => setIsVisible(prev => allowed && !prev)}
-             className="image-item" src={`img/${isMobile ? 'mobile/' : ''}${src}`}
-             alt="/" />
-        <div onClick={() => setIsVisible(prev => allowed && !prev)}
-             className="image-popup"  
-             style={styleImg}>
-          <img className="image-item" 
-               src={`img/${isMobile ? 'mobile/' : ''}${src}`}
-               alt="/" />
+        <img
+            onClick={() => setIsVisible(prev => allowed && !prev)}
+            className="image-item" src={`img/${isMobile ? 'mobile/' : ''}${src}`}
+            alt="/"
+        />
+        <div
+            onClick={() => setIsVisible(prev => allowed && !prev)}
+            className="image-popup"  
+            style={styleImg}
+        >
+            <img
+                className="image-item" 
+                src={`img/${isMobile ? 'mobile/' : ''}${src}`}
+                alt="/"
+            />
         </div>
-        <div className="image-overlay" style={overlay}></div>
+        <div
+            className="image-overlay"
+            style={overlay}
+        ></div>
     </div>
   )
 }

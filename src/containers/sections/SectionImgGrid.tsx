@@ -1,19 +1,20 @@
 import { ReactNode } from "react";
 import { Img } from "../../components/Img/Img";
-import { Image } from "../../types/types";
+import './styles/section-img-grid.scss';
 
-type Images = {
-    images: string[]
+type ImagesGrid = {
+    images: string[],
+    order: string
 }
-const SectionImageGrid = ({images}: Images) => {
+
+const SectionImageGrid = ({images, order}: ImagesGrid) => {
     return(
-        <div className="section-img-grid">
-            {images.forEach( (img, id): Image => {
+        <div className={`section-img-grid grid-${order}`}>
+            {images.map( (img, id): ReactNode => {
                 return(
                     <Img 
-                        src={img} 
-                        num={id} 
-                        allowed={false}
+                        src={img}
+                        num={id.toString()}
                     />
                 )
             })}
