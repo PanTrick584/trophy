@@ -1,4 +1,9 @@
 @import '../../styles/utils/variables.scss';
+@mixin desktop {
+    @media all and (min-width: 1024px) {
+        @content;
+    }
+}
 
 .container {
     background-color: $colorOrangeLight;
@@ -10,7 +15,11 @@
     &-layout {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 5px 0;
+        padding: 0;
+
+        @include desktop {
+            padding: 15px 0;
+        }
 
         .image-box {
             position: relative;
@@ -20,7 +29,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            // box-shadow: 5px 5px 12px 2px;
         }
 
         .image-popup {

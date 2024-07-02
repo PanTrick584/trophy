@@ -1,5 +1,6 @@
 import { Img } from "../../components/Img/Img";
 import { Image } from "../../types/types";
+import './styles/section-img-single.scss'
 
 const SectionImgSingle = ({src, num}: Image) => {
     return(

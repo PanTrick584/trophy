@@ -1,0 +1,13 @@
+@mixin desktop {
+    @media all and (min-width: 1024px) {
+        @content;
+    }
+}
+
+.section-img-single {
+    padding-bottom: 200px;
+
+    @include desktop {
+        padding-bottom: 450px;
+    }
+}

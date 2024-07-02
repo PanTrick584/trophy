@@ -1,14 +1,28 @@
 @import '../../../styles//utils/variables.scss';
+@mixin desktop {
+    @media all and (min-width: 1024px) {
+        @content;
+    }
+}
 
 .section-text {
-    padding: 450px 0;
-    font-size: 32px;
+    padding: 200px 0;
+    font-size: 20px;
     color: $colorBlue;
     width: 60%;
     margin: 0 auto;
     text-align: center;
 
     &:first-of-type {
-        padding: 100px 0 450px;
+        padding: 100px 0 200px;
+    }
+
+    @include desktop {
+        padding: 450px 0;
+        font-size: 32px;
+
+        &:first-of-type {
+            padding: 100px 0 450px;
+        }
     }
 }
