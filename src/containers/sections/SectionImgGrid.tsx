@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Img } from "../../components/Img/Img";
+import { Img } from "../../components/Img";
 import './styles/section-img-grid.scss';
 
 type ImagesGrid = {

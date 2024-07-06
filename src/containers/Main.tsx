@@ -104,7 +104,7 @@ const Main = () => {
             />
             <SectionImgSingle
                 src="header-3.jpg"
-                num="1"
+                num="2"
             />
             <SectionImgGrid
                 images={grid_7}

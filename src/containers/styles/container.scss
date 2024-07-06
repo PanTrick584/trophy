@@ -1,9 +1,5 @@
-@import '../../styles/utils/variables.scss';
-@mixin desktop {
-    @media all and (min-width: 1024px) {
-        @content;
-    }
-}
+@import '../../styles/variables.scss';
+@import '../../styles/resolutions.scss';
 
 .container {
     background-color: $colorOrangeLight;
@@ -15,44 +11,10 @@
     &-layout {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0;
+        padding: 3px;
 
         @include desktop {
             padding: 15px 0;
-        }
-
-        .image-box {
-            position: relative;
-        }
-
-        .image-item {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .image-popup {
-            position: fixed;
-            top: 50%;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            background-color: rgba($color: #000000, $alpha: .9);
-            cursor: pointer;
-            transition: all .4s;
-            z-index: 100;
-            transform: translateY(-50%);
-
-            img {
-                width: 100%;
-                height: auto;
-                margin: auto;
-            }
-        }
-
-        .image-overlay {
-            transition: all .4s;
         }
     }
 }

@@ -1,4 +1,4 @@
-import { Img } from "../components/Img/Img";
+import { Img } from "../components/Img";
 import './styles/header.scss';
 
 type HeaderProps = {

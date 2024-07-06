@@ -15,13 +15,13 @@ const Menu = () => {
           <div className='menu-nav-btn-item'></div>
           <div className='menu-nav-btn-item'></div>
         </div>
-        <nav className={showMenu ? 'menu-nav' : 'menu-nav hide'}>
-        <ul className='menu-nav-list'>
-            <li className='menu-nav-list-item'>O Autorze</li>
-            <li className='menu-nav-list-item'>Kontakt</li>
-            <li className='menu-nav-list-item'>Media</li>
-        </ul>
-        </nav>
+        {/* <nav className={showMenu ? 'menu-nav' : 'menu-nav hide'}>
+          <ul className='menu-nav-list'>
+              <li className='menu-nav-list-item'>O Autorze</li>
+              <li className='menu-nav-list-item'>Kontakt</li>
+              <li className='menu-nav-list-item'>Media</li>
+          </ul>
+        </nav> */}
         <div onClick={() => handleLang(language)} className={showMenu ? 'language' : 'language hide'}>
             {language}
         </div>

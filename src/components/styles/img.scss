@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+@import '../../styles/resolutions.scss';
+
+.image-box {
+    .image-item {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image-popup {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($colorOrangeLight, .8);
+        animation-name: show;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+
+        @include desktop {
+            background-color: rgba($colorOrangeLight, .6);
+        }
+        
+        .image-item {
+            height: auto;
+            width: 98%;
+
+            @include desktop {
+                height: 90%;
+                width: auto;
+            }
+        }
+    }
+}
+
+@keyframes show {
+   from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,9 +1,6 @@
-@import '../../../styles//utils/variables.scss';
-@mixin desktop {
-    @media all and (min-width: 1024px) {
-        @content;
-    }
-}
+@import '../../../styles//variables.scss';
+@import '../../../styles/resolutions.scss';
+
 
 .section-text {
     padding: 200px 0;

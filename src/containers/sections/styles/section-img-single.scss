@@ -1,13 +1,13 @@
-@mixin desktop {
-    @media all and (min-width: 1024px) {
-        @content;
-    }
-}
+@import '../../../styles/resolutions.scss';
 
 .section-img-single {
     padding-bottom: 200px;
 
     @include desktop {
         padding-bottom: 450px;
+    }
+
+    &.single-2 {
+        padding-top: 200px;
     }
 }

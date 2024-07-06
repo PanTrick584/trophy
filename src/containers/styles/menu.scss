@@ -1,15 +1,18 @@
-@import '../../styles/utils/variables.scss';
+@import '../../styles/variables.scss';
 @import '../../styles/globals.scss';
 
 .menu {
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     height: 100%;
-    width: 300px;
+    width: 100px;
     background-color: transparent;
     z-index: 2;
-    margin-left: -220px;
+    margin-left: -25px;
     transition: all .3s;
 
     &-show {
@@ -56,16 +59,17 @@
                     margin-bottom: 0;
                 }
             }
-        }
 
-        .btn-transform {
-            transform: rotate(90deg);
+            &.btn-transform {
+                transform: rotate(45deg);
+            }
         }
     }
 
     .language {
-        width: fit-content;
+        // width: fit-content;
         margin: 10px 15px 0 auto;
+        padding-top: 10px;
         font-size: 14px;
         font-family: inherit;
         font-weight: 700;

@@ -11,9 +11,9 @@ const SectionText = ({text}: SectionTextProp) => {
     const translatedText: string = text[language] || 'Translation not available';;
 
     return(
-        <div className="section-text">
+        <p className="section-text">
             {translatedText}
-        </div>
+        </p>
     )
 }
 
